@@ -11,7 +11,6 @@ export const startNewNot = () => {
 
         const { uid } = getState().auth;
 
-        console.log( getState() );
         const newNote = {
             title: '',
             body: '',
@@ -73,8 +72,6 @@ export const startUploadingFiles = ( files = [] ) => {
         }
 
         const photosUrls = await Promise.all( fileUploadPromises );
-
-        console.log(  photosUrls );
 
         dispatch( setPhotosToActiveNote( photosUrls ) );
     }

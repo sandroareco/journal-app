@@ -29,7 +29,6 @@ export const LoginPage = () => {
     }
 
     const onGoogleSignIn = () => {
-        console.log( 'OnGoogleSignIn');
         dispatch( startGoogleSignIn() );
     }
 
